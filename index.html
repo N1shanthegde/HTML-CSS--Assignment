@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Garden</title>
+    <link rel="stylesheet" href="Garden.css">
+    <link rel="shortcut icon" href="./static/icon.webp" type="image.x-icon">
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav1">
+            <div class="navbat">
+                <div class="uppernav ">
+                    <div class="social-icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                    <div class="loc ">
+                        <h3>Current Location: Bengaluru</h3>
+                    </div>
+                    <div class="email-ph ">
+                        <a href="#" class="E-mail ">E-mail us</a>
+                        <a href="#" class="E-mail ">+91-9108114321</a>
+                    </div>
+                </div>
+                <div class="container-fluid downnav " style="margin-top: 0; height:10px;">
+                    <i class="fa-solid fa-bars" onclick="openmenu()" id="open"></i>
+
+                    <img src="./static/logo.avif" alt="Gourmet Garden" height="100px" width="100px">
+                    <div class="downnav-opt mt-4">
+                        <div class="searchbar">
+                            <input type="text" placeholder="Search">
+                            <div class="icons">
+                                <i class="fa-regular fa-circle-user"></i>
+                                <i class="fa-solid fa-location-dot"></i>
+                                <i class="fa-solid fa-cart-arrow-down"></i>
+                            </div>
+                        </div>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()" id="close"></i>
+                        <div class="options mb-3 d-flex ">
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown">
+                                    Fresh Vegetables
+                                </button>
+                                <ul class="dropdown-menu content">
+                                    <li><a class="dropdown-item" href="#">Complete Range</a></li>
+                                    <li><a class="dropdown-item" href="#">Organic Vegetables</a></li>
+                                    <li><a class="dropdown-item" href="#">Naturoponic VegetabIes</a></li>
+                                    <li><a class="dropdown-item" href="#">Traditional Vegetables</a></li>
+                                    <li><a class="dropdown-item" href="#">pre-cut vegetables</a></li>
+                                    <li><a class="dropdown-item" href="#">GG-Oddly</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown">
+                                    Fresh Fruits
+                                </button>
+                                <ul class="dropdown-menu content">
+                                    <li><a class="dropdown-item" href="#">Complete Range</a></li>
+                                    <li><a class="dropdown-item" href="#">Imported Fruits</a></li>
+                                    <li><a class="dropdown-item" href="#">Traditional Fruits</a></li>
+                                    <li><a class="dropdown-item" href="#">Organic Fruits</a></li>
+                                    <li><a class="dropdown-item" href="#">Pre-Cut Fruits</a></li>
+                                    <li><a class="dropdown-item" href="#">Mango Pulp</a></li>
+                                    <li><a class="dropdown-item" href="#">GG-Oddly</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown">
+                                    Leafy Greens
+                                </button>
+                                <ul class="dropdown-menu content">
+                                    <li><a class="dropdown-item" href="#">Complete Range</a></li>
+                                    <li><a class="dropdown-item" href="#"> Naturoponic Leafy Greens</a></li>
+                                    <li><a class="dropdown-item" href="#"> Organic Leafy Greens</a></li>
+                                    <li><a class="dropdown-item" href="#">Microgreens</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown">
+                                    Grains
+                                </button>
+                                <ul class="dropdown-menu content">
+                                    <li><a class="dropdown-item" href="#">Complete Range</a></li>
+                                    <li><a class="dropdown-item" href="#">Pulses</a></li>
+                                    <li><a class="dropdown-item" href="#">Rice</a></li>
+                                    <li><a class="dropdown-item" href="#">Flours</a></li>
+                                    <li><a class="dropdown-item" href="#">Sweeteners</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown ">
+                                <button type="button" data-bs-toggle="dropdown">
+                                    Spices
+                                </button>
+                                <ul class="dropdown-menu content">
+                                    <li><a class="dropdown-item" href="#">Complete Range</a></li>
+                                    <li><a class="dropdown-item" href="#">Whole spices</a></li>
+                                    <li><a class="dropdown-item" href="#">Freshly Grounded</a></li>
+
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown">
+                                    Dry Fruits
+                                </button>
+                                <ul class="dropdown-menu content">
+                                    <li><a class="dropdown-item" href="#">Complete Range</a></li>
+                                    <li><a class="dropdown-item" href="#">Nuts</a></li>
+                                    <li><a class="dropdown-item" href="#">Seeds</a></li>
+                                    <li><a class="dropdown-item" href="#">Dry fruits</a></li>
+                                    <li><a class="dropdown-item" href="#">Ladoos & Chikkis</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown" class="">
+                                    Oils & Sauces
+                                </button>
+                                <ul class="dropdown-menu content">
+                                    <li><a class="dropdown-item" href="#">Complete Range</a></li>
+                                    <li><a class="dropdown-item" href="#">Ghee</a></li>
+                                    <li><a class="dropdown-item" href="#">cooking Oils</a></li>
+                                    <li><a class="dropdown-item" href="#">Infused Oils</a></li>
+                                    <li><a class="dropdown-item" href="#">Pickles</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown">
+                                <button type="button" data-bs-toggle="dropdown">
+                                    Breads & Cheese
+                                </button>
+                                <ul class="dropdown-menu content">
+                                    <li><a class="dropdown-item" href="#">Breads</a></li>
+                                    <li><a class="dropdown-item" href="#">Cakes</a></li>
+                                    <li><a class="dropdown-item" href="#">Hard Cheese</a></li>
+                                    <li><a class="dropdown-item" href="#">soft cheese</a></li>
+                                    <li><a class="dropdown-item" href="#">Cooki es</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container-fluid mt-5" style="background-image: url('/static/hero.webp');">
+        </div>
+        <div class="marque">
+            <marquee behavior="" direction="">
+                <h3><i class="fa-solid fa-diamond"></i> Step Up to Better Food <i class="fa-solid fa-diamond"></i>Step
+                    Up to Better Food <i class="fa-solid fa-diamond"></i>Step Up to Better Food <i
+                        class="fa-solid fa-diamond"></i>Step Up to Better Food <i class="fa-solid fa-diamond"></i>Step
+                    Up to Better Food </h3>
+            </marquee>
+        </div>
+    </section>
+    <section>
+        <div class="flex-container mt-4 d-flex justify-content-center">
+            <img class="img-fluid" src="./static/betterVariety.webp" alt="Better Variety" width="310px" height="200px">
+            <img class="img-fluid" src="./static/betterPlanet.webp" alt="Better Planet" width="310px" height="200px">
+            <img class="img-fluid" src="./static/BetterFreshness.webp" alt="Better Freshness" width="310px"
+                height="200px">
+            <img class="img-fluid" src="./static/betterSafety.webp" alt="Better Safety" width="310px" height="200px">
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid itemcontainer">
+            <div class="row item-row col-12">
+                <div class="col item " style="background-image: url(./static/freshVegetables.webp); ">
+                    <h4 class="item-txt">Fresh Vegetables</h4>
+                </div>
+                <div class="col item " style="background-image: url(./static/freshFruits.webp);">
+                    <h4 class="item-txt">Fresh Fruits</h4>
+                </div>
+                <div class="col item " style="background-image: url(./static/leafyGreems.webp);">
+                    <h4 class="item-txt">Leafy Greens</h4>
+                </div>
+                <div class="col item " style="background-image: url(./static/grains.webp);">
+                    <h4 class="item-txt">Grains</h4>
+                </div>
+            </div>
+            <div class="row item-row col-12">
+                <div class="col item " style="background-image: url(./static/spices.webp);">
+                    <h4 class="item-txt">Spices</h4>
+                </div>
+                <div class="col item " style="background-image: url(./static/dryFruits.webp);">
+                    <h4 class="item-txt">Dry Fruits</h4>
+                </div>
+                <div class="col item " style="background-image: url(./static/oilAndSauces.webp);">
+                    <h4 class="item-txt">Oils & Sauces</h4>
+                </div>
+                <div class="col item " style="background-image: url(./static/breadAndCheese.webp);">
+                    <h4 class="item-txt">Breads & Cheese</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="best-seller">
+            <h1>Best Seller</h1>
+            <div class="container-fluid">
+                <div class="row col-12">
+                    <div class="product">
+                        <div class="label">Naturoponic</div>
+                        <div class="discount">-18%</div>
+                        <img src="./static/palak.webp" alt="palak" class="image">
+                        <h2>Palak</h2>
+                        <div class="price">₹29.00</div>
+                        <div class="orginal-price">₹35.00</div>
+                        <div class="product-weight">
+                            <div class="weignt">150g</div>
+                        </div>
+                        <button class="add-to-cart"><i class="fa-solid fa-bag-shopping"></i>add to cart</button>
+
+                    </div>
+                    <div class="product ">
+                        <div class="label">Naturoponic</div>
+                        <div class="discount">-18%</div>
+                        <img src="./static/Coriander.webp" alt="Coriander" class="image">
+                        <h2>Coriander</h2>
+                        <div class="price">₹29.00</div>
+                        <div class="orginal-price">₹35.00</div>
+                        <div class="product-weight">
+                            <div class="weignt">150g</div>
+                        </div>
+                        <button class="add-to-cart"><i class="fa-solid fa-bag-shopping"></i>add to cart</button>
+                    </div>
+                    <div class="product ">
+                        <div class="label" style="background-color: #d6954b;">Organic</div>
+                        <div class="discount">-18%</div>
+                        <img src="./static/LadyFinger.webp" alt="Coriander" class="image">
+                        <h2>Lady's Finger</h2>
+                        <div class="price">₹29.00</div>
+                        <div class="orginal-price">₹35.00</div>
+                        <div class="product-weight">
+                            <div class="weignt">220-250g</div>
+                            <div class="weignt">450-550g</div>
+                        </div>
+                        <button class="add-to-cart"><i class="fa-solid fa-bag-shopping"></i>add to cart</button>
+
+                    </div>
+                    <div class="product ">
+                        <div class="label" style="background-color: #d6954b;">Organic</div>
+                        <div class="discount">-18%</div>
+                        <img src="./static/ootyCarrots.webp" alt="Coriander" class="image">
+                        <h2>Ooty Carrots</h2>
+                        <div class="price">₹29.00</div>
+                        <div class="orginal-price">₹35.00</div>
+                        <div class="product-weight">
+                            <div class="weignt">220-250g</div>
+                            <div class="weignt">450-550g</div>
+                        </div>
+                        <button class="add-to-cart"><i class="fa-solid fa-bag-shopping"></i>add to cart</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="contactUs flex-container">
+            <div class="farm">
+                <h2>Join Hands with Gourmet Garden</h2>
+                <h4>Partnering Opportunities for Farmers and Businesses</h4>
+                <button>Contact Us</button>
+                <div class="farming" style="background-image: url(./static/fam.avif);"></div>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <div class="container-fluid ">
+
+            <div class="container feedbacks col-10">
+                <p class="h4">Hear From Our Happy Customers</p>
+                <p class="h6 text-success">Join the chorus of voices that celebrate the joys of healthy, gourmet living.
+                    #StepUpToBetterFood</p>
+                <div class="row ">
+                    <div class="card col-4 mt-5" style="border: none;">
+                        <p>
+                            "I am GG fan since 2019 when for the first time I tried online shopping for fresh produce. I
+                            love
+                            your leafy vegetables. They are always fresh, crisp - clean. Hooked with Great discount
+                            coupons and
+                            deals in every purchase. Great Range of leafes can be bought from their platform- which are
+                            all
+                            Naturoponic grown in their own farms."
+                        </p>
+                        <div class="author">
+                            <img alt="Photo of Gayathri Menon" height="70" src="./static/user.webp" width="70" />
+                            <div class="name">
+                                NISHANT HEGDE, BENGALURU
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 mt-5" style="border: none;">
+                        <p>
+                            "What I love about them is mostly all items from basic to exotic fruits and vegetables are
+                            present on the same platform. The biggest difference GG made in my life is that I don't have
+                            to depend on frozen or canned food to make something exotic. Fresh food goes a long way into
+                            living a Healthy Lifestyle. A Great Start for me."
+                        </p>
+                        <div class="author">
+                            <img alt="Photo of Gayathri Menon" height="70" src="./static/user.webp" width="70" />
+                            <div class="name">
+                                PRATP NAIK, SIDDAPUR
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card col-4 mt-5" style="border: none;">
+                        <p>
+                            "Over the last 3 yrs, I have experienced GG evolving - improved processes around order
+                            placement (app), delivery, replacement, & refund. There's a wider range of products now -
+                            the dry fruits as well as the spices are also top-notch! The one thing that's remained
+                            constant through these years with GG is Quality & Customer service!"
+                        </p>
+                        <div class="author">
+                            <img alt="Photo of Gayathri Menon" height="70" src="./static/user.webp" width="70" />
+                            <div class="name">
+                                NAGARJUN L, BENGALURU
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="details">
+            <div class="community">
+                <h4>Step up to Better Food with Our Vibrant<br>Community!</h4>
+                <h6>Discover Tips, Recipes, and Lifestyle Inspiration to Elevate Your Health & Wellness
+                    Journey<br>#BetterFood # BetterLiving 💪🌱</h6>
+            </div>
+            <div class="advs">
+                <div class="adv">
+                    <h2 id="center">Sustainability</h2>
+                    <p>As stewards of the earth, we believe in the harmonious coexistence of flavor and responsibility.
+                    </p>
+                    <div class="adv-img">
+                        <img src="./static/adv-img1.avif" alt="">
+                    </div>
+                </div>
+                <div class="adv">
+                    <h2>Health & Nutrition</h2>
+                    <p>Great health starts with what's on your plate! Kick-start your wellness journey with GG</p>
+                    <div class="adv-img">
+                        <img src="./static/adv-img2.avif" alt="">
+                    </div>
+                </div>
+                <div class="adv">
+                    <h2>Recipes & Cooking</h2>
+                    <p>Explore the art of transforming fresh ingredients into gourmet meals.</p>
+                    <div class="adv-img">
+                        <img src="./static/adv-img3.avif" alt="">
+                    </div>
+                </div>
+                <div class="adv">
+                    <h2>
+                        <center>Food Storage & Safety</center>
+                    </h2>
+                    <p>Tips for proper food storage to extend shelf life & minimize waste.</p>
+                    <div class="adv-img">
+                        <img src="./static/adv-img4.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="flex-container mt-3 follow-ig ">
+            <div class="mt-4 p-5 ig">
+                <h1 class="txt-bl">#Follow GG On Instagram</h1>
+                <button class="ig-id">@gourmetgardenindia</button>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="videos">
+            <div class="video">
+                <iframe src="https://www.youtube.com/embed/Qva2_443Ws8?si=zyDm7ScSojDNb-Dg" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="chrunch">
+                <p id="c">The Crunch Song</p>
+                <p id="p">Celebrating symphony of freshness and<br>crunchiness with our gourmet delights</p>
+                <button>Hear Now!</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <div class="left">
+                <p><strong>My Account</strong></p>
+                <p>Login / Register</p>
+                <p>Wallet / Loyalty Reward</p>
+            </div>
+            <div class="mid">
+                <p><strong>Customer Service </strong></p>
+                <p>Contact Us</p>
+                <p>Delivery Information</p>
+                <p>Privacy Policy</p>
+                <p>Terms Of Service</p>
+                <p>FAQs</p>
+            </div>
+            <div class="middle">
+                <p><strong>Company</strong></p>
+                <p>About Us</p>
+                <p>Blogs</p>
+                <p>Join Hands with GG</p>
+            </div>
+            <div class="right">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+    </footer>
+    <script>
+        let options = document.querySelector(".options");
+        function openmenu() {
+            options.style.left = "0";
+        }
+        function closemenu() {
+            options.style.left = "-900px";
+        }
+    </script>
+</body>
+
+</html>
